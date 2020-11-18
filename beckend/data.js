@@ -1,4 +1,19 @@
+import bcrypt from "bcryptjs";
 export default {
+  users: [
+    {
+      name: "nur",
+      email: "medo1208@yahoo.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "md",
+      email: "md@yahoo.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       _id: 1,

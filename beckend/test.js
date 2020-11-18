@@ -1,5 +1,5 @@
 import Express from "express";
-// import data from "../birthday-remander/src/data";
+import data from "../birthday-remander/src/data";
 
 const app = Express();
 const port = 3000;
