@@ -16,7 +16,6 @@ export default {
   ],
   products: [
     {
-      _id: 1,
       name: "Nick Slim Shirt",
       category: "Shirts",
       image: "/images/p1.jpg",
@@ -28,7 +27,6 @@ export default {
       description: "high quality product",
     },
     {
-      _id: 2,
       name: "Adidas Slim Shirt",
       category: "Shirts",
       image: "/images/p2.jpg",
@@ -40,7 +38,6 @@ export default {
       description: "high quality product",
     },
     {
-      _id: 3,
       name: "Lacoste Slim Shirt",
       category: "Shirts",
       image: "/images/p3.jpg",
@@ -52,7 +49,6 @@ export default {
       description: "high quality product",
     },
     {
-      _id: 4,
       name: "Nick Slim Pant",
       category: "Pants",
       image: "/images/p4.jpg",
@@ -64,7 +60,6 @@ export default {
       description: "high quality product",
     },
     {
-      _id: 5,
       name: "Puma Slim Pant",
       category: "Pants",
       image: "/images/p5.jpg",
@@ -76,7 +71,6 @@ export default {
       description: "high quality product",
     },
     {
-      _id: 6,
       name: "Adidas Fit Pant",
       category: "Pants",
       image: "/images/p6.jpg",
