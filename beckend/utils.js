@@ -16,7 +16,7 @@ export const generateToken = (user) => {
 };
 
 export const isAuth = (req, res, next) => {
-  const authorization = req.header.authorization;
+  const authorization = req.headers.authorization;
   if (authorization) {
     const token = authorization.slice(7, authorization.length);
     jwt.verify(
@@ -26,7 +26,7 @@ export const isAuth = (req, res, next) => {
         if (err) {
           res.status(401).send({ message: "invalid token" });
         } else {
-          res.user = decode;
+          req.user = decode;
           next();
         }
       }
