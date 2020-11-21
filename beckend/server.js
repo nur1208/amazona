@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
 import orderRouter from "./routers/orderRouter.js";
-
+/*global process */
 dotenv.config();
 
 const app = express();
@@ -20,8 +20,10 @@ mongoose.connect(process.env.MONGO || "mongodb://localhost/amazona", {
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
-app.use("/api/orders", orderRouter);
-
+app.use("/api/order", orderRouter);
+app.get("/api/config/paypal", (req, res) => {
+  res.send(process.env.PAYPAL_CLIENT_ID || "sb");
+});
 app.get("/", (req, res) => {
   res.send("Server is ready yeah");
 });
