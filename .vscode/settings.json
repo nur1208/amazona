@@ -22,5 +22,8 @@
         "user",
         "user signout",
         "user singin"
+    ],
+    "cSpell.ignoreWords": [
+        "orderhistory"
     ]
 }
